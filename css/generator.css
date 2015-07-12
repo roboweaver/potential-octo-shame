@@ -1,0 +1,29 @@
+/** Font Awesome example CSS from http://codepen.io/jamesbarnett/pen/yILjk 
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+**/
+@import url('font-awesome.min.css');
+
+/*** custom checkboxes ***/
+
+div.checkbox input[type=checkbox] { display:none; visibility: hidden; } /* to hide the checkbox itself */
+div.checkbox input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1.2em;
+  letter-spacing: .5em;
+}
+
+div.checkbox input[type=checkbox] + label:before { content: "\f096";} /* unchecked icon */
+
+div.checkbox input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+
+label {
+    vertical-align: top;
+}
+
+.nav > .active > a,
+.nav > li >a:hover, 
+.nav > li > a:focus,
+.nav > li.active {
+	background-color: lightgray;
+}
